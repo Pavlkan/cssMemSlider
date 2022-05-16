@@ -48,28 +48,38 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 ======================================—body—======================================
 ——————————————————————————————————————————————————————————————————————————————— */
 
+input {
+    display: none;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 5vw;
 
     background-color: bisque;
 }
 
+.slider {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 .slider_image-wrapper {
     display: flex;
-    max-width: 60vw;
+    max-width: 90vw;
     width: 100%;
-    margin: 0 auto;
+    margin-bottom: 20px;
 
-    overflow: hidden;
+    transition: ease-in-out 0.5s;
 }
 
 .slider_image {
     display: flex;
-    min-width: 60vw;
+    min-width: 90vw;
+    border-radius: 3%;
 
     background-color: black;
 }
@@ -78,20 +88,165 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     object-fit: cover;
     max-width: 100%;
     margin: 0 auto;
+    border-radius: 2%;
 }
 
-.slider_text-wrapper {
+.slider_text-and-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 90vw;
+    margin: 0 auto;
+}
+
+.slider_text {
+    overflow: hidden;
+}
+
+.text-wrapper {
     display: flex;
     max-width: 30vw;
     width: 100%;
 
-    overflow: hidden;
+    transition: ease-in-out 0.5s;
 }
 
-.slider_text {
-    min-width: 30vw;
+.text-element {
+    min-width: 30vw;    
 }
 
 .slider_button-wrapper {
     display: flex;
 }
+
+.slider_button-element {
+    margin-left: 1vw;
+    min-width: 5vw;
+    min-height: 5vw;
+}
+
+/* label {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00000000;
+    border-radius: 50%;
+
+    padding: 7px;
+    background-color: #00000044;
+    background-clip: content-box;
+
+    cursor: pointer;
+    
+    transition: 0.1s all linear;
+    outline: none;
+} */
+
+/* .radio-button:checked {
+    padding: 5px;
+    background-color: #000000;
+    background-clip: content-box;
+} */
+
+label {
+    min-width: 5vw;
+    min-height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    border: 2px solid black;
+
+    transition: 0.5s;
+}
+
+label:hover span{
+    background-color: rgba(0, 0, 0, 0.436);
+
+    box-shadow: 0px 0px 15px rgb(0, 234, 255);
+}
+
+#radio-button_one:checked ~ .wrapper .slider .slider_image-wrapper,
+#radio-button_one:checked ~ .wrapper .slider_text-and-button-wrapper .slider_text .text-wrapper {
+    margin-left: 0;
+}
+
+#radio-button_two:checked ~ .wrapper .slider .slider_image-wrapper,
+#radio-button_two:checked ~ .wrapper .slider_text-and-button-wrapper .slider_text .text-wrapper {
+    margin-left: -100%;
+}
+
+#radio-button_three:checked ~ .wrapper .slider .slider_image-wrapper,
+#radio-button_three:checked ~ .wrapper .slider_text-and-button-wrapper .slider_text .text-wrapper {
+    margin-left: -200%;
+}
+
+#radio-button_four:checked ~ .wrapper .slider .slider_image-wrapper,
+#radio-button_four:checked ~ .wrapper .slider_text-and-button-wrapper .slider_text .text-wrapper {
+    margin-left: -300%;
+}
+
+#radio-button_one:checked ~ 
+.wrapper 
+.slider_text-and-button-wrapper 
+.slider_button-wrapper 
+.slider_button-element label 
+.sircle_one {
+    height: 3vw;
+    width: 3vw;
+
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px rgb(0, 234, 255);
+}
+
+#radio-button_two:checked ~ 
+.wrapper 
+.slider_text-and-button-wrapper 
+.slider_button-wrapper 
+.slider_button-element label 
+.sircle_two {
+    height: 3vw;
+    width: 3vw;
+
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px rgb(0, 234, 255);
+}
+
+#radio-button_three:checked ~ 
+.wrapper 
+.slider_text-and-button-wrapper 
+.slider_button-wrapper 
+.slider_button-element label 
+.sircle_three {
+    height: 3vw;
+    width: 3vw;
+
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px rgb(0, 234, 255);
+}
+
+#radio-button_four:checked ~ 
+.wrapper 
+.slider_text-and-button-wrapper 
+.slider_button-wrapper 
+.slider_button-element label 
+.sircle_four {
+    height: 3vw;
+    width: 3vw;
+
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px rgb(0, 234, 255);
+}
+
+
+

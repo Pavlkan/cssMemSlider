@@ -8,34 +8,66 @@
     <title>cssMemSlider</title>
 </head>
 <body>
+    
+    <input class="radio-button radio-button_one" for="radio-button_one" id="radio-button_one" name="radio_button" type="radio" checked>
+    <input class="radio-button radio-button_two" for="radio-button_two" id="radio-button_two" name="radio_button" type="radio">
+    <input class="radio-button radio-button_three" for="radio-button_three" id="radio-button_three" name="radio_button" type="radio">
+    <input class="radio-button radio-button_four" for="radio-button_four" id="radio-button_four" name="radio_button" type="radio">
+   
     <div class="wrapper">
-        <div class="slider_image-wrapper">
-            <div class="slider_image">
-                <img src="./assets/images/stress.jpg" alt="stress">
-            </div>
-            <div class="slider_image">
-                <img src="./assets/images/stress.jpg" alt="stress">
-            </div>
-            <div class="slider_image">
-                <img src="./assets/images/stress.jpg" alt="stress">
-            </div>
-            <div class="slider_image">
-                <img src="./assets/images/stress.jpg" alt="stress">
+        <div class="slider">
+            <div class="slider_image-wrapper">
+                <div class="slider_image">
+                    <img src="./assets/images/Yellow.jpg" alt="Yellow">
+                </div>
+                <div class="slider_image">
+                    <img src="./assets/images/Red.jpg" alt="Red">
+                </div>
+                <div class="slider_image">
+                    <img src="./assets/images/Green.jpg" alt="Green">
+                </div>
+                <div class="slider_image">
+                    <img src="./assets/images/Blue.jpg" alt="Blue">
+                </div>
             </div>
         </div>
-
-        <div class="slider_text-wrapper">
-            <p class="slider_text">HOW TO AVOID STRESS</p>
-            <p class="slider_text">STRESS AGAIN, DEAR</p>
-            <p class="slider_text">STRESS IS DEAD! LONG LIVE THE STRESS</p>
-            <p class="slider_text">DO U KNOW, HOW TO AVOID STRESS?</p>
-        </div>   
         
-        <div class="slider_button-wrapper">
-            <div class="slider_button-element"><input class="input_one" type="radio"></div>
-            <div class="slider_button-element"><input class="input_two" type="radio"></div>
-            <div class="slider_button-element"><input class="input_three" type="radio"></div>
-            <div class="slider_button-element"><input class="input_four" type="radio"></div>
+
+        <div class="slider_text-and-button-wrapper">
+            <div class="slider_text">
+                <div class="text-wrapper">
+                    <p class="text-element">Yellow</p>
+                    <p class="text-element">Red</p>
+                    <p class="text-element">Green</p>
+                    <p class="text-element">Blue</p>
+                </div>   
+            </div>
+            
+            <div class="slider_button-wrapper">
+                <div class="slider_button-element">
+                    <label for="radio-button_one">
+                        <span class="sircle_one"></span>
+                    </label>
+                </div>
+
+                <div class="slider_button-element">
+                    <label for="radio-button_two">
+                        <span class="sircle_two"></span>
+                    </label>
+                </div>
+
+                <div class="slider_button-element">
+                    <label for="radio-button_three">
+                        <span class="sircle_three"></span>
+                    </label>
+                </div>
+                
+                <div class="slider_button-element">
+                    <label for="radio-button_four">
+                        <span class="sircle_four"></span>
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
 </body>
