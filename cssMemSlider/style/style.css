@@ -49,6 +49,49 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 ——————————————————————————————————————————————————————————————————————————————— */
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     min-height: 100%;
     overflow: hidden;
+    padding: 100px 0;
+
+    background-color: bisque;
+}
+
+.slider_image-wrapper {
+    display: flex;
+    max-width: 60vw;
+    width: 100%;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+.slider_image {
+    display: flex;
+    min-width: 60vw;
+
+    background-color: black;
+}
+
+.slider_image img {
+    object-fit: cover;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider_text-wrapper {
+    display: flex;
+    max-width: 30vw;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.slider_text {
+    min-width: 30vw;
+}
+
+.slider_button-wrapper {
+    display: flex;
 }
